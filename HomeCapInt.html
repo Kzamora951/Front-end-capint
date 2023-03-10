@@ -93,6 +93,9 @@
       transform: scale(1.1);
       transition: .3s ease;
     }
+    .nav-link{
+      cursor: pointer;
+    }
 
     /* BANNER SECTION
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -480,7 +483,7 @@
               <a class="nav-link" href="#Noticias">Noticias</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#HojaVida">Hoja de Vida</a>
+              <a class="nav-link" onclick="holadevida()">Hoja de Vida</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#process">Ayuda</a>
@@ -687,22 +690,7 @@
       </div>
     </section>
 
-    <section id="HojaVida" class="py-5 request-quote bg-lightblue">
-      <div class="container-fluid container-fluid-max">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-auto py-3 text-center">
-            <h2 class="mb-0 text-red">Actualiza tu hoja de vida</h2>
-            <p class="mb-0 h4 text-red font-weight-normal color">Mantente Actualizado</p>
-          </div>
-          <div class="col-12 col-md-auto d-flex justify-content-center align-items-center">
-            <a class="btn bg-red text-white font-weight-bold" href="" role="button">
-              Aqui
-              <i class="ml-1 fas fa-hand-point-left"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+    
   </main>
   <footer class="py-5 page-footer">
     <div class="container-fluid container-fluid-max">
@@ -774,6 +762,10 @@
       if (index > (length - 1)) { index = 0; }
       slides[index].classList.add('slide--current');
     });
+
+    function holadevida(){
+      window.location.href = 'Empleado/hojaVida.html';
+    }
   </script>
 </body>
 
