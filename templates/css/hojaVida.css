@@ -213,3 +213,9 @@ h3,
             width: 150px;
         }
 }
+.estImagen{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    
+}
