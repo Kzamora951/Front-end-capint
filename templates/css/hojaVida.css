@@ -1,17 +1,24 @@
+
+body{
+    background-color: whitesmoke;
+}
 .parent {
     display: grid;
-    grid-template-columns: .2fr repeat(2, .5fr) .2fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: .4fr repeat(2, 1fr) .5fr;
+    grid-template-rows: 1fr .1fr 1fr .9fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     }
     
     .div1 { grid-area: 1 / 2 / 2 / 3; }
     .div2 { grid-area: 1 / 3 / 2 / 4; }
-    .div3 { grid-area: 2 / 3 / 3 / 4; }
-    .div4 { grid-area: 2 / 2 / 3 / 3; }
-    .div5 { grid-area: 1 / 1 / 3 / 2; }
-    .div6 { grid-area: 1 / 4 / 3 / 5; }
+    .div3 { grid-area: 3 / 3 / 4 / 4; }
+    .div4 { grid-area: 3 / 2 / 4 / 3; }
+    .div5 { grid-area: 4 / 2 / 5 / 3; }
+    .div6 { grid-area: 1 / 1 / 5 / 2; }
+    .div7 { grid-area: 1 / 4 / 5 / 5; }
+    .div8 { grid-area: 2 / 2 / 3 / 4; }
+    .div9 { grid-area: 4 / 3 / 5 / 4; }
 
 .hjcont {
     display: grid;
@@ -19,7 +26,7 @@
 }
 
 .hjform {
-    border: 1px rgb(83, 83, 83) solid;
+    border: none;
     border-radius: 20px;
     -webkit-box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.29);
     box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.29);
@@ -27,6 +34,10 @@
     border-collapse: separate;
     border-spacing: 5px;
     padding: 10px 20px;
+}
+.hjform input[type="file"]{
+    transform: scale(.9);
+    width: 158px;
 }
 
 
@@ -42,7 +53,7 @@ h3,
 }
 
 .hjform2 {
-    border: 1px rgb(83, 83, 83) solid;
+    border: none;
     border-radius: 20px;
     -webkit-box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.29);
     box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.29);
@@ -57,31 +68,135 @@ h3,
 }
 
 .hjform2 input[type="file"]{
-    width: fit-content !important;
+    width: 260px !important;
 }
 
 .hjform input{
-    width: 180px;
-}
-.hjform2 input{
-    width: 180px;
-}
-.hjform2 select{
-    width: 180px;
+    width: 150px;
+    border-color: transparent;
+    border-bottom: 2px lightgray solid;
+    background-color:  whitesmoke;
+    font-size: 105%;
+    color: rgba(8, 8, 8,.7);
+    cursor: pointer;
 }
 
+.hjform input:focus{
+    outline: none;
+    transition: .6 all ease;
+    border-bottom: 1px #23566B solid;
+    transition: all .6s ease;
+}
+.hjform input:hover{
+    outline: none;
+    transition: .6 all ease;
+    border-bottom: 2px #23566B solid;
+    transition: all .6s ease;
+    color: black;
+}
+.hjform input[type="date"]{
+    color: gray;
+}
+.hjform textarea{
+    border: 2px lightgray solid;
+    border-radius: 5px;
+    background-color:  whitesmoke;
+    color: gray;
+}
+.hjform textarea:hover{
+    outline: none;
+    transition: .6 all ease;
+    border: 2px #23566B solid;
+    transition: all .6s ease;
+    color: black;
+}
+.hjform textarea:focus{
+    outline: none;
+    transition: .6 all ease;
+    border: 2px #23566B solid;
+    transition: all .6s ease;
+}
+.hjform2 input{
+    outline: none;
+    width: 150px;
+    border-color: transparent;
+    border-bottom: 2px lightgray solid;
+    cursor: pointer;
+    background-color:  whitesmoke;
+}
+.hjform2 select{
+    width: 150px;
+    border: 2px solid  whitesmoke;
+    border-bottom: 2px lightgray solid;
+    cursor: pointer;
+    color: gray;
+    background-color:  whitesmoke;
+}
+.hjform2 input:focus{
+    outline: none;
+    transition: .6 all ease;
+    border-bottom: 1px #23566B solid;
+    transition: all .6s ease;
+    color: black;
+}
+.hjform2 input:hover{
+    outline: none;
+    transition: .6 all ease;
+    border-bottom: 2px #23566B solid;
+    transition: all .6s ease;
+}
+.hjform2 select:hover{
+    outline: none;
+    transition: .6 all ease;
+    border-bottom: 2px #23566B solid;
+    transition: all .6s ease;
+    color: black;
+}
+.hjform2 select:focus{
+    outline: none;
+    transition: .6 all ease;
+    border-bottom: 2px #23566B solid;
+    transition: all .6s ease;    
+}
+.hjform2 input[type="file"]{
+    border-bottom: 2px lightgray solid;
+    cursor: pointer;
+}
+
+
+.hjform2 input[type="date"]{
+    color: gray;
+
+}
+.hjform2 textarea{
+    border: 2px lightgray solid;
+    border-radius: 5px;
+    background-color:  whitesmoke;
+}
+.hjform2 textarea:hover{
+    outline: none;
+    transition: .6 all ease;
+    border: 2px #23566B solid;
+    transition: all .6s ease;
+}
+.hjform2 textarea:focus{
+    outline: none;
+    transition: .6 all ease;
+    border: 2px #23566B solid;
+    transition: all .6s ease;
+}
 
 
 /*INFO PERSONAL*/
 .parent2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(7, .8fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     }
     
-    .divG1 { grid-area: 1 / 1 / 2 / 2; }
+    .divG1 { grid-area: 1 / 1 / 2 / 2; width: 200px;}
     .divG2 { grid-area: 1 / 2 / 2 / 3; }
     .divG3 { grid-area: 2 / 1 / 3 / 2; }
     .divG4 { grid-area: 2 / 2 / 3 / 3; }
@@ -93,6 +208,8 @@ h3,
     .divG10 { grid-area: 5 / 2 / 6 / 3; }
     .divG11 { grid-area: 6 / 1 / 7 / 2; }
     .divG12 { grid-area: 6 / 2 / 7 / 3; }
+    .divG13 { grid-area: 7 / 1 / 8 / 2; }
+    .divG14 { grid-area: 7 / 2 / 8 / 3; }
 
 .parent2 div{
     margin-bottom: 15px;
@@ -108,10 +225,10 @@ h3,
     grid-row-gap: 0px;
     }
     
-    .divH1 { grid-area: 1 / 1 / 2 / 2; }
+    .divH1 { grid-area: 1 / 1 / 2 / 2; width: 550px !important;}
     .divH2 { grid-area: 1 / 2 / 2 / 3; }
     .divH3 { grid-area: 1 / 3 / 2 / 4; }
-    .divH4 { grid-area: 1 / 4 / 2 / 5; }
+    .divH4 { grid-area: 1 / 4 / 2 / 5;}
     .divH5 { grid-area: 2 / 1 / 3 / 2; }
     .divH6 { grid-area: 2 / 2 / 3 / 3; }
     .divH7 { grid-area: 2 / 3 / 3 / 4; }
@@ -128,9 +245,7 @@ h3,
         margin-bottom: 15px;
         text-align: left;
     }
-.ifile{
-    max-width: 300px;
-}
+
     
 
 
@@ -143,7 +258,7 @@ h3,
     grid-row-gap: 0px;
     }
     
-    .divI1 { grid-area: 1 / 1 / 2 / 2; }
+    .divI1 { grid-area: 1 / 1 / 2 / 2; width: 70px;}
     .divI2 { grid-area: 1 / 2 / 2 / 3; }
     .divI3 { grid-area: 1 / 3 / 2 / 4; }
     .divI4 { grid-area: 1 / 4 / 2 / 5; }
@@ -157,26 +272,124 @@ h3,
     .divI12 { grid-area: 4 / 2 / 5 / 4; }
     .divI13 { grid-area: 5 / 1 / 6 / 2; }
     .divI14 { grid-area: 5 / 2 / 6 / 3; }
-    .divI15 { grid-area: 5 / 3 / 6 / 4; text-align: center;}
+    .divI15 { grid-area: 5 / 3 / 6 / 4; text-align: center !important;}
     .divI16 { grid-area: 5 / 4 / 6 / 5; }
     .divI17 { grid-area: 4 / 4 / 5 / 5; }
     .divI18 { grid-area: 3 / 4 / 4 / 5; }
     .divI19 { grid-area: 3 / 3 / 4 / 4; }
 
+    
+    .parent4 div{
+        margin-bottom: 15px;
+        text-align: left;
+        /* width: 180px; */
+    }
+
 /*INFO EMERGENCIA*/
 .parent5 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
+    .divJ1 { grid-area: 1 / 1 / 2 / 2; width: 200px;}
+    .divJ2 { grid-area: 1 / 2 / 2 / 3; }
+    .divJ3 { grid-area: 2 / 1 / 3 / 2; }
+    .divJ4 { grid-area: 2 / 2 / 3 / 3; }
+    .divJ5 { grid-area: 3 / 1 / 4 / 2; }
+    .divJ6 { grid-area: 3 / 2 / 4 / 3; }
+    .divJ7 { grid-area: 4 / 1 / 5 / 2; }
+    .divJ8 { grid-area: 4 / 2 / 5 / 3; }
+
 .parent5 div{
-    margin-bottom: 15px;
+    margin-bottom: 17px;
     text-align: left;
 }
 
+/*INFO SOBRE TI*/
+.parent6 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+    .divk1 { grid-area: 1 / 1 / 2 / 2; width: 100px;}
+    .divk2 { grid-area: 1 / 2 / 2 / 3; }
 
+.parent5 div{
+    margin-bottom: 17px;
+    text-align: left;
+}
+
+/*BOTON GUARDAR*/
+.botonGuardar{
+    width: 180px;
+    padding: 9px 10px;
+    border-radius: 10px;
+    outline: none;
+    border: 2px lightgray solid;
+    cursor: pointer;
+    color: #23566B;
+    font-weight: bold;
+}
+.botonGuardar:hover{
+    background-color: rgb(47, 115, 145);
+    border-color: rgba(36, 86, 107,.9);
+    transition: all .5s ease;
+    color: white;
+}
+.bottin{
+    margin-top: -200px;
+}
+/* INPUT FILE*/
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    max-width: 166px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    overflow: hidden;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    margin-right: 0.25em;
+}
+
+.iborrainputfile {
+    font-size:15px; 
+    font-weight:normal;
+    font-family: 'Lato';
+}
+.inputfile-2 + label {
+    color: #23566B;
+    border: 2px solid currentColor;
+    border-radius: 5px;
+} 
+.inputfile-2 + label:hover {
+    background-color: #23566B;
+    color: aliceblue;
+    border: 2px solid #23566B;
+    transition: .6s all ease-out;
+} 
 
 
 
@@ -188,16 +401,21 @@ h3,
 @media screen and (max-width: 1350px){
     .parent {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: .4fr;
+        grid-template-rows: 1fr .2fr 1fr .05fr 1fr .2fr 1fr .05fr 1fr;
         grid-column-gap: 0px;
         grid-row-gap: 0px;
         }
         
-        .div1 { grid-area: 1 / 1 / 2 / 2; margin-bottom: 4%;}
-        .div2 { grid-area: 2 / 1 / 3 / 2; margin-left: 0;}
-        .div3 { grid-area: 3 / 1 / 4 / 2; }
-        .div4 { grid-area: 4 / 1 / 5 / 2; }
+        .div1 { grid-area: 1 / 1 / 2 / 2; }
+        .div2 { grid-area: 3 / 1 / 4 / 2; }
+        .div3 { grid-area: 5 / 1 / 6 / 2; }
+        .div4 { grid-area: 7 / 1 / 8 / 2; }
+        .div5 { grid-area: 9 / 1 / 10 / 2; }
+        .div6 { grid-area: 2 / 1 / 3 / 2; }
+        .div7 { grid-area: 6 / 1 / 7 / 2; }
+        .div8 { grid-area: 8 / 1 / 9 / 2; }
+        .div9 { grid-area: 4 / 1 / 5 / 2; }
 
         .hjform2 input[type="file"]{
             width: fit-content !important;
@@ -212,10 +430,4 @@ h3,
         .hjform2 select{
             width: 150px;
         }
-}
-.estImagen{
-    width: 100%;
-    height: auto;
-    position: absolute;
-    
 }
