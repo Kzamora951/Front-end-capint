@@ -146,6 +146,7 @@ body {
   width: 520px;
   background: #fff;
   padding: 25px;
+  border-radius: 0px 10px 10px 0px;
 }
 
 .resume .resume_right .bold {
@@ -201,23 +202,25 @@ body {
 
 .resume .resume_right .resume_hobby ul {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  
 }
 
 .resume .resume_right .resume_hobby ul li {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   border: 2px solid #23566B;
-  border-radius: 50%;
+  border-radius: 10%;
   position: relative;
   color: #23566B;
+  margin-bottom: 15px;
 }
 
 .resume .resume_right .resume_hobby ul li i {
   font-size: 30px;
 }
 
-.resume .resume_right .resume_hobby ul li:before {
+/* .resume .resume_right .resume_hobby ul li:before {
   content: "";
   position: absolute;
   top: 40px;
@@ -225,7 +228,7 @@ body {
   width: 50px;
   height: 2px;
   background: #23566B;
-}
+} */
 
 .resume .resume_right .resume_hobby ul li:last-child:before {
   display: none;

@@ -14,7 +14,7 @@ body{
     .div2 { grid-area: 1 / 3 / 2 / 4; }
     .div3 { grid-area: 3 / 3 / 4 / 4; }
     .div4 { grid-area: 3 / 2 / 4 / 3; }
-    .div5 { grid-area: 4 / 2 / 5 / 3; }
+    .div5 { grid-area: 4 / 2 / 5 / 3; margin-top: -40px;}
     .div6 { grid-area: 1 / 1 / 5 / 2; }
     .div7 { grid-area: 1 / 4 / 5 / 5; }
     .div8 { grid-area: 2 / 2 / 3 / 4; }
