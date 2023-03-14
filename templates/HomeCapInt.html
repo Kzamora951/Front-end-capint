@@ -6,6 +6,9 @@
   <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style type="text/css">
     /* RESET RULES & HELPER CLASSES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -462,6 +465,18 @@
         opacity: 1;
       }
     }
+    .maps{
+      border: #3f3f3f 3px inset;
+      border-radius: 14px;
+    }
+    .maps iframe{
+      border-radius: 11px;
+      opacity: 80%;
+    }
+    .maps iframe:hover{
+      opacity: 95%;
+      transition: .6s all ease-out;
+    }
   </style>
 </head>
 
@@ -513,6 +528,11 @@
                 role="button">Ver Ahora</a>
             </div>
           </div>
+              <div class="maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1988.2706826432293!2d-74.0492041!3d4.6755296999999985!2m3!1f
+                0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a8d923b6083%3A0x6004353d5937de3!2sCl.%2093%20%2312-14%2C%20Localidad%20de%20Chapinero%2C%20Bogot%C3%A1!5e0!3m2!1sen!2sco!4v1678819609317!5m2!1sen!2sco" 
+                width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
         </div>
       </div>
     </section>
