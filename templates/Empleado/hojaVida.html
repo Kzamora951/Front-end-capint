@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="es">
 <head>
     <title></title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -163,6 +165,9 @@
         .page-footer .footer-links {
             text-align: right;
         }
+        .page-footer{
+            margin-top: -80px;
+        }
 
         /* MEDIA QUERIES
     –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -297,8 +302,16 @@
                                     <div class="divG10"> <input type="number" required placeholder="Telefono" name="Telefono" id="Telefono"></div>
                                     <div class="divG11"> Direccion de Residencia:</div>
                                     <div class="divG12"> <input type="text" required placeholder="Direccion" name="Residencia" id="Residencia"></div>
-                                </div>  
-                            </div>
+                                    <div class="divG13"> Foto Personal:</div>
+                                    <div class="divG14"> 
+                                        <input type="file" name="file-1" id="file-1" required class="inputfile inputfile-2" data-multiple-caption="{count} archivos seleccionados" multiple />
+                                        <label for="file-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="iborrainputfile" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"></path></svg>
+                                        <span class="iborrainputfile">Seleccionar archivo</span>
+                                        </label>
+                                        </div>
+                                    </div>
+                                </div> 
                         </div>
                     </section>
                 </div>
@@ -334,7 +347,11 @@
                                         <option value="SH">Santa Helena</option><option value="LC">Santa Lucía</option><option value="ST">Santo Tomé y Príncipe</option><option value="SN">Senegal</option><option value="SC">Seychelles</option><option value="SL">Sierra Leona</option><option value="SG">Singapur</option><option value="SY">Siria</option><option value="SO">Somalia</option><option value="LK">Sri Lanka</option><option value="PM">St Pierre y Miquelon</option><option value="SZ">Suazilandia</option><option value="SD">Sudán</option><option value="SE">Suecia</option><option value="CH">Suiza</option><option value="SR">Surinam</option><option value="TH">Tailandia</option><option value="TW">Taiwán</option><option value="TZ">Tanzania</option><option value="TJ">Tayikistán</option><option value="TF">Territorios franceses del Sur</option><option value="TP">Timor Oriental</option><option value="TG">Togo</option><option value="TO">Tonga</option><option value="TT">Trinidad y Tobago</option><option value="TN">Túnez</option><option value="TM">Turkmenistán</option><option value="TR">Turquía</option><option value="TV">Tuvalu</option><option value="UA">Ucrania</option><option value="UG">Uganda</option><option value="UY">Uruguay</option><option value="UZ">Uzbekistán</option><option value="VU">Vanuatu</option><option value="VE">Venezuela</option><option value="VN">Vietnam</option><option value="YE">Yemen</option><option value="YU">Yugoslavia</option><option value="ZM">Zambia</option><option value="ZW">Zimbabue</option>
                                    </select></div>
                                     <div class="div11H"> Certificado:</div>
-                                    <div class="div12H ifile"> <input type="file" required name="Certificado" id="Certificado"></div>
+                                    <div class="div12H ifile"> <input type="file" required name="file-2" id="file-2" class="inputfile inputfile-2" data-multiple-caption="{count} archivos seleccionados" multiple />
+                                        <label for="file-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="iborrainputfile" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"></path></svg>
+                                        <span class="iborrainputfile">Seleccionar archivo</span>
+                                        </label></div>
                                     <div class="divH13"></div>
                                     <div class="divH14"></div>
                                     <div class="divH15"></div>
@@ -369,25 +386,21 @@
                                         <option value="SH">Santa Helena</option><option value="LC">Santa Lucía</option><option value="ST">Santo Tomé y Príncipe</option><option value="SN">Senegal</option><option value="SC">Seychelles</option><option value="SL">Sierra Leona</option><option value="SG">Singapur</option><option value="SY">Siria</option><option value="SO">Somalia</option><option value="LK">Sri Lanka</option><option value="PM">St Pierre y Miquelon</option><option value="SZ">Suazilandia</option><option value="SD">Sudán</option><option value="SE">Suecia</option><option value="CH">Suiza</option><option value="SR">Surinam</option><option value="TH">Tailandia</option><option value="TW">Taiwán</option><option value="TZ">Tanzania</option><option value="TJ">Tayikistán</option><option value="TF">Territorios franceses del Sur</option><option value="TP">Timor Oriental</option><option value="TG">Togo</option><option value="TO">Tonga</option><option value="TT">Trinidad y Tobago</option><option value="TN">Túnez</option><option value="TM">Turkmenistán</option><option value="TR">Turquía</option><option value="TV">Tuvalu</option><option value="UA">Ucrania</option><option value="UG">Uganda</option><option value="UY">Uruguay</option><option value="UZ">Uzbekistán</option><option value="VU">Vanuatu</option><option value="VE">Venezuela</option><option value="VN">Vietnam</option><option value="YE">Yemen</option><option value="YU">Yugoslavia</option><option value="ZM">Zambia</option><option value="ZW">Zimbabue</option>
                                         </select></div>
                                     <div class="divI11"> Certificado:</div>
-                                    <div class="divI12"> <input type="file" name="CertificadoPro" id="CeCertificadoPrortificado"></div>
-                                    <div class="divI13"> Funciones Desempeñadas:</div>
-                                    <div class="divI14"> <textarea name="Funciones" required id="Funciones" cols="25" rows="4"></textarea></div>
+                                    <div class="divI12"> <input type="file" name="file-3" required id="file-3" class="inputfile inputfile-2" data-multiple-caption="{count} archivos seleccionados" multiple />
+                                        <label for="file-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="iborrainputfile" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"></path></svg>
+                                        <span class="iborrainputfile">Seleccionar archivo</span>
+                                        </label></div>
+                                    <div class="divI13"> Funciones <br> Desempeñadas:</div>
+                                    <div class="divI14"> <textarea name="Funciones" required id="Funciones" cols="20" rows="4"></textarea></div>
                                     <div class="divI15"> Logros:</div>
-                                    <div class="divI16"> <textarea name="Logros" required id="Logros" cols="25" rows="4"></textarea></div>
+                                    <div class="divI16"> <textarea name="Logros" required id="Logros" cols="20" rows="4"></textarea></div>
                                     <div class="divI17"> </div>
                                     <div class="divI18"> </div>
                                     <div class="divI19"> </div>
                                     </div>
                                         <td></td>
                                         <td colspan="2"></td>
-                                    </tr>
-                                    <tr>
-                                        <td></td>
-                                        <td>
-                                        </td>
-                                        <td> </td>
-                                        <td>
-                                        </td>
                                     </tr>
                                 </table>
                             </div>
@@ -401,21 +414,34 @@
                             <div class="hjform">
                                 <h3>Contacto en caso de <br> Emergencia</h3>
                                 <div class="parent5">
-                                    <div class="divG1"> Nombre:</div>
-                                    <div class="divG2"> <input type="text" required placeholder="Nombre Completo" name="nombreEmer" id="nombreEmer"></div>
-                                    <div class="divG3"> Documento:</div>
-                                    <div class="divG4"> <input type="text" required placeholder="sin espacion ni comas" name="docEmer"id="docEmer"></div>
-                                    <div class="divG5"> Telefono:</div>
-                                    <div class="divG6"> <input type="number" required placeholder="Telefono" name="TelefonoEmer" id="TelefonoEmer"></div>
-                                    <div class="divG7"> Direccion de Residencia:</div>
-                                    <div class="divG8"> <input type="text" required placeholder="Direccion" name="ResidenciaEmer" id="ResidenciaEmer"></div>
+                                    <div class="divJ1"> Nombre:</div>
+                                    <div class="divJ2"> <input type="text" required placeholder="Nombre Completo" name="nombreEmer" id="nombreEmer"></div>
+                                    <div class="divJ3"> Documento:</div>
+                                    <div class="divJ4"> <input type="text" required placeholder="Documento" name="docEmer"id="docEmer"></div>
+                                    <div class="divJ5"> Telefono:</div>
+                                    <div class="divJ6"> <input type="number" required placeholder="Telefono" name="TelefonoEmer" id="TelefonoEmer"></div>
+                                    <div class="divJ7"> Direccion de Residencia:</div>
+                                    <div class="divJ8"> <input type="text" required placeholder="Direccion" name="ResidenciaEmer" id="ResidenciaEmer"></div>
                                 </div>  
                             </div>
                         </div>
                     </section>
                 </div>
-                <div class="div5"> </div>
+                <div class="div5"><section>
+                    <div class="hjcont">
+                        <div class="hjform">
+                            <h3>Sobre Ti</h3>
+                            <div class="parent6">
+                                <div class="divk1"> Dinos algo de ti:</div>
+                                <div class="divk2"> <textarea name="sobreti" id="sobreti" cols="25" rows="5"></textarea></div>
+                            </div>  
+                        </div>
+                    </div>
+                </section></div>
                 <div class="div6"> </div>
+                <div class="div7"> </div>
+                <div class="div8"> </div>
+                <div class="div9"> </div>
             </div>
         
 
@@ -423,11 +449,11 @@
 
 
 
-        <section id="request-quote" class="py-5 request-quote bg-lightblue">
-            <div class="container-fluid container-fluid-max">
+        <section id="request-quote" class="py-5 request-quote bg-lightblue backwhite bottin">
+            <div class="container-fluid container-fluid-max backwhite">
                 <div class="row justify-content-center">
-                    <div class="col-12 col-md-auto py-3 text-center">
-                        <input type="submit" value="Guardar">
+                    <div class="col-12 col-md-auto py-3 text-center backwhite">
+                        <input type="submit" class="botonGuardar" value="Guardar">
                     </div>
                 </div>
             </div>
@@ -438,15 +464,11 @@
         <div class="container-fluid container-fluid-max">
             <div class="row">
                 <div class="col-12 col-md-6 footer-child copyright">
-                    HoneyDreams © 2018 All Rights Reserved
+                    &copy; Copyright <b id="anio"></b>, Pearl Solutions
                 </div>
                 <div class="col-12 col-md-6 footer-child footer-links">
                     <a href="" class="mr-3">Privacy Policy</a>
-                    <a href="">FAQ</a>
                     <div>
-                        <small>Made with <i class="fas fa-heart text-red"></i> by <a href="http://georgemartsoukos.com/"
-                                target="_blank">George Martsoukos</a>
-                        </small>
                     </div>
                 </div>
             </div>
@@ -479,6 +501,38 @@
         function volver() {
             window.location.href = '../HomeCapInt.html';
         }
+        const anio = new Date().getFullYear();
+        document.getElementById("anio").innerHTML = anio;
+        
+
+        //Btn Input File
+        'use strict';
+
+;( function ( document, window, index )
+{
+	var inputs = document.querySelectorAll( '.inputfile' );
+	Array.prototype.forEach.call( inputs, function( input )
+	{
+		var label	 = input.nextElementSibling,
+			labelVal = label.innerHTML;
+
+		input.addEventListener( 'change', function( e )
+		{
+			var fileName = '';
+			if( this.files && this.files.length > 1 )
+				fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
+			else
+				fileName = e.target.value.split( '\\' ).pop();
+
+			if( fileName )
+				label.querySelector( 'span' ).innerHTML = fileName;
+			else
+				label.innerHTML = labelVal;
+		});
+	});
+}( document, window, 0 ));
+
+
     </script>
 </body>
 
