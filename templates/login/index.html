@@ -92,7 +92,7 @@
 
 <body>
   <form>
-    <center><img src="/templates/img/pearLogo.png" width="200px" height="90px"></center>
+    <center><img src="/templates/img/logo.png" width="200px" height="90px"></center>
     <label>
       <i class="fa-solid fa-user"></i>
       <input placeholder="Usuario" type="text" id="login" name="login" required>
@@ -101,9 +101,12 @@
       <i class="fa-solid fa-lock"></i>
       <input placeholder="Contraseña" type="password" id="password" name="password" required>
     </label>
-    <button id="button" type="button" onclick="validarLogin()">Ingresar</button><br>
+    <!-- <button id="button" type="button" onclick="validarLogin()">Ingresar</button><br> -->
+  
+    <button onclick="irHomeCapInt()">Ingresar</button><br>
+
     <a href="registro.html" class="link" style="text-decoration: none;">Registrase</a>
   </form>
-  <script src="js/login.js"></script>
+  <script src="../js/login.js"></script>
 </body>
 </html>

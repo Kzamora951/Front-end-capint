@@ -30,14 +30,18 @@ validarLogin = () => {
           }
           if (e.email == usuario && e.pass == pass) {              
             swal("Acceso Correcto", "", "success").then((value) => {
-              window.location.href = 'grafica.html';
+              window.location.href = '../templates/HomeCapInt.html';
             });
           }
         });
         // ansRes = json;
         // renderResult(ansRes);
       })
-
+      
     }
+    
+  }
 
+  function irHomeCapInt() {
+    window.location.href = "../HomeCapInt.html";
   }
